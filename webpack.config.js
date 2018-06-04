@@ -44,7 +44,14 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    "css-loader",
+                    {
+                        loader: "css-loader",
+                        options: {
+                            sourceMap: true,
+                            minimize: false,
+                            url: true //не корректно работают ссылки при значении true
+                        }
+                    },
                     "resolve-url-loader"
                 ]
             },
