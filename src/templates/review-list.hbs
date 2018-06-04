@@ -1,0 +1,18 @@
+<div class="review-list-wrapper">
+    <ul class="review-list">
+        {{#each reviews}}
+            <li class="review-list-item review">
+                <div class="review-info">
+                    <div class="review-author">{{author}}</div>
+                    <div class="review-place">{{place}}</div>
+                    <div class="review-date">{{date}}</div>
+                </div>
+                <div class="review-text">{{text}}</div>
+            </li>
+        {{else}}
+            <li class="no-reviews">
+                Отзывов пока нет...
+            </li>
+        {{/each}}
+    </ul>
+</div>

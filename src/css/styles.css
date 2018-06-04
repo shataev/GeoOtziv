@@ -1,0 +1,79 @@
+@import "./../../node_modules/reset-css/reset.css";
+@import './../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import "./../../node_modules/font-awesome/css/font-awesome.css";
+
+
+/*Baloon*/
+
+.review-baloon {
+    width: 380px;
+    border-radius: 10px;
+    border-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.review-baloon .card-header {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    background-color: #ff8663;
+    color: #ffffff;
+}
+
+.review-baloon .card-header .close-btn {
+    color: #ffffff;
+    outline: none;
+    opacity: 1;
+    font-size: 12px;
+}
+
+.review-list-wrapper {
+    height: 155px;
+    color: #4f4f4f;
+}
+
+.review-list-wrapper .no-reviews {
+    font-size: 18px;
+}
+
+.review-baloon .baloon-body {
+    padding: 15px;
+}
+
+.add-review-form {
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+    text-align: right;
+}
+
+.add-review-form .add-review-form-header {
+    font-size: 18px;
+    color: #ff8663;
+    text-align: left;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.add-review-form .form-control {
+    border-radius: 17px;
+    margin-bottom: 14px;
+}
+
+.add-review-form .review-textarea {
+    resize: none;
+}
+
+.add-review-form .add-review-btn {
+    width: 87px;
+    height: 30px;
+    color: #ffffff;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+    background-color: #ff8663;
+}
+
+/*Baloon end*/
