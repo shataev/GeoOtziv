@@ -3,16 +3,16 @@
 @import "./../../node_modules/font-awesome/css/font-awesome.css";
 
 
-/*Baloon*/
+/*Balloon*/
 
-.review-baloon {
+.review-balloon {
     width: 380px;
     border-radius: 10px;
     border-color: #f0f0f0;
     overflow: hidden;
 }
 
-.review-baloon .card-header {
+.review-balloon .card-header {
     height: 45px;
     display: flex;
     justify-content: space-between;
@@ -21,7 +21,7 @@
     color: #ffffff;
 }
 
-.review-baloon .card-header .close-btn {
+.review-balloon .card-header .close-btn {
     color: #ffffff;
     outline: none;
     opacity: 1;
@@ -37,7 +37,7 @@
     font-size: 18px;
 }
 
-.review-baloon .baloon-body {
+.review-balloon .baloon-body {
     padding: 15px;
 }
 
@@ -76,4 +76,4 @@
     background-color: #ff8663;
 }
 
-/*Baloon end*/
+/*Balloon end*/
