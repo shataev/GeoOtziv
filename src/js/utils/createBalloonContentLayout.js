@@ -1,10 +1,8 @@
-import baloon from '../../templates/baloon.hbs';
+import balloon from '../../templates/balloon.hbs';
 
 let createBalloonContentLayout = (pointData) => {
-    let baloonHTML = baloon(pointData);
-    let balloonContentLayout = ymaps.templateLayoutFactory.createClass(
-        baloonHTML
-    );
+    let baloonHTML = balloon(pointData);
+    let balloonContentLayout = ymaps.templateLayoutFactory.createClass(baloonHTML);
 
     return balloonContentLayout;
 };

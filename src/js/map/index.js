@@ -1,17 +1,19 @@
 import initMap from './init';
 import config from './config';
 import makeClusterer from './clusterer';
-import addClickHandlerToMap from './../events/click';
+import addClickHandlerToMap from './../events/addClickHandlerToMap';
+import addButtonClickHandler from './../events/addButtonClickHandler';
 
 const mapMaker = () => {
     ymaps.ready(() => {
-        let myMap = initMap(config);
+        let map = initMap(config);
         let clusterer = makeClusterer();
 
-        myMap.geoObjects.add(clusterer);
+        map.geoObjects.add(clusterer);
 
-		addClickHandlerToMap(myMap, clusterer);
+		addClickHandlerToMap(map, clusterer);
 
+        addButtonClickHandler(map, clusterer)
     });
 };
 

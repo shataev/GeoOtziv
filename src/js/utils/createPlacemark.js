@@ -9,6 +9,7 @@ const createPlacemark = (map, pointData) => {
 		balloonContentLayout: createBalloonContentLayout(pointData),
 		balloonPanelMaxMapArea: 0,
 		hideIconOnBalloonOpen: true,
+        preset: 'islands#violetIcon'
 	});
 
 	return myPlacemark
