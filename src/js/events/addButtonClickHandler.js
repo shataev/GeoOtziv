@@ -1,4 +1,7 @@
 import createPlacemark from './../utils/createPlacemark';
+import getReviewDataFromForm from './../utils/getReviewDataFromForm';
+import clearFormFields from './../utils/clearFormFields';
+import addReviewDataToLocalStorage from './../utils/storageReviewData';
 
 const addButtonClickHandler = (map, clusterer) => {
     document.body.addEventListener('click', e => {
@@ -6,27 +9,21 @@ const addButtonClickHandler = (map, clusterer) => {
             e.preventDefault();
 
             const addButton = e.target;
+			const pointData = map.balloon.getData();
             const form = addButton.closest('form');
-            const author = form['author'].value;
-            const place = form['place'].value;
-            const text = form['text'].value;
-            const pointData = map.balloon.getData();
-            const reviewData = {
-                author: author,
-                place: place,
-                text: text,
-                date: new Date()
+            const reviewData = getReviewDataFromForm(form);
+            let newPointData = {
+                coords: pointData.coords ? pointData.coords : pointData.geometry.getCoordinates(),
+                adress: pointData.adress,
+                review: reviewData
             };
+            const placemark = createPlacemark(map, newPointData);
 
-            if (pointData.reviews) {
-                pointData.reviews.push(reviewData);
-            } else {
-                pointData.reviews = [reviewData];
-            }
-
-            const placemark = createPlacemark(map, pointData);
+			addReviewDataToLocalStorage(newPointData);
 
             clusterer.add(placemark);
+
+			clearFormFields(form);
         }
     })
 };
