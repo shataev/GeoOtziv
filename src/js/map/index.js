@@ -1,8 +1,8 @@
 import initMap from './init';
 import config from './config';
 import makeClusterer from './clusterer';
-import addClickHandlerToMap from './../events/addClickHandlerToMap';
-import addButtonClickHandler from './../events/addButtonClickHandler';
+import mapClick from './../events/mapClick';
+import addButtonClick from './../events/addButtonClick';
 import carouselItemClick from './../events/carouselItemClick';
 
 const mapMaker = () => {
@@ -12,8 +12,8 @@ const mapMaker = () => {
 
         map.geoObjects.add(clusterer);
 
-		addClickHandlerToMap(map, clusterer);
-        addButtonClickHandler(map, clusterer);
+		mapClick(map, clusterer);
+        addButtonClick(map, clusterer);
 		carouselItemClick(map);
     });
 };

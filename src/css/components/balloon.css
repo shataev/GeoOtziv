@@ -1,0 +1,28 @@
+/*Balloon*/
+
+.review-balloon {
+    width: 380px;
+    border-radius: 10px;
+    border-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.review-balloon .card-header {
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    background-color: #ff8663;
+    color: #ffffff;
+}
+
+.review-balloon .card-header .close-btn {
+    color: #ffffff;
+    outline: none;
+    opacity: 1;
+    font-size: 12px;
+}
+
+.review-balloon .baloon-body {
+    padding: 15px;
+}

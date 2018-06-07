@@ -1,0 +1,68 @@
+/*Форма добавления отзыва*/
+
+.add-review-form {
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+    text-align: right;
+}
+
+.add-review-form .add-review-form-header {
+    font-size: 18px;
+    color: #ff8663;
+    text-align: left;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: 15px;
+}
+
+.add-review-form .form-control {
+    border-radius: 17px;
+    margin-bottom: 14px;
+    box-shadow: none;
+}
+
+.add-review-form .form-control:focus {
+    border-color: #a9a9a9;
+}
+
+/*.add-review-form .form-control.is-invalid {
+    border-color: #dc3545;
+}*/
+
+.add-review-form .review-textarea {
+    resize: none;
+}
+
+.required-fields-message.is-hidden {
+    display: none;
+}
+
+.add-review-form-footer {
+}
+
+.required-fields-message {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    line-height: 14px;
+    color: #dc3545;
+    position: absolute;
+    bottom: 18px;
+    text-align: left;
+}
+
+.add-review-form .add-review-btn {
+    width: 87px;
+    height: 30px;
+    color: #ffffff;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 0;
+    background-color: #ff8663;
+}
+
+.add-review-form .add-review-btn:hover {
+    opacity: 0.7;
+}

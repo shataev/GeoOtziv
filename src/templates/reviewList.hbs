@@ -1,12 +1,12 @@
 <ul class="review-list">
     {{#with review}}
         <li class="review-list-item review">
-            {{> "./review.hbs"}}
+            {{> "./reviewItem.hbs"}}
         </li>
     {{else}}
         {{#each reviews}}
             <li class="review-list-item review">
-                {{> "./review.hbs"}}
+                {{> "./reviewItem.hbs"}}
             </li>
         {{else}}
             <li class="no-reviews">
