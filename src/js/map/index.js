@@ -3,6 +3,7 @@ import config from './config';
 import makeClusterer from './clusterer';
 import addClickHandlerToMap from './../events/addClickHandlerToMap';
 import addButtonClickHandler from './../events/addButtonClickHandler';
+import carouselItemClick from './../events/carouselItemClick';
 
 const mapMaker = () => {
     ymaps.ready(() => {
@@ -12,8 +13,8 @@ const mapMaker = () => {
         map.geoObjects.add(clusterer);
 
 		addClickHandlerToMap(map, clusterer);
-
-        addButtonClickHandler(map, clusterer)
+        addButtonClickHandler(map, clusterer);
+		carouselItemClick(map);
     });
 };
 
