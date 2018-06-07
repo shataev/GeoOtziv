@@ -3,7 +3,7 @@ import createBalloonContentLayout from './createBalloonContentLayout';
 
 const createPlacemark = (map, pointData) => {
 	let coords = pointData.coords ? pointData.coords : pointData.geometry.getCoordinates();
-	let myPlacemark = window.myPlacemark = new ymaps.Placemark(coords, {
+	let myPlacemark = new ymaps.Placemark(coords, {
 		pointData: pointData
 	},{
 		balloonShadow: false,
@@ -14,7 +14,7 @@ const createPlacemark = (map, pointData) => {
 		preset: 'islands#violetIcon',
 	});
 
-	return myPlacemark
+	return myPlacemark;
 };
 
 export default createPlacemark;
