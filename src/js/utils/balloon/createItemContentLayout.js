@@ -1,4 +1,4 @@
-import carousellItem from './../../templates/carouselItem.hbs';
+import carousellItem from '../../../templates/carouselItem.hbs';
 
 const createItemContentLayout = () => {
 	return  ymaps.templateLayoutFactory.createClass(

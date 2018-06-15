@@ -1,4 +1,4 @@
-import openBalloon from './../utils/openBalloon';
+import openBalloon from '../utils/balloon/openBalloon';
 
 const carouselItemClick = (map) => {
 	document.body.addEventListener('click', e => {

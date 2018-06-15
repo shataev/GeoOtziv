@@ -1,7 +1,12 @@
 {
   "name": "GeoOtzyv",
   "version": "0.0.1",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.10"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
@@ -10,6 +15,7 @@
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.28.11",
+    "dns": "^0.2.2",
     "file-loader": "^1.1.11",
     "font-awesome": "^4.7.0",
     "handlebars": "^4.0.11",
@@ -17,6 +23,7 @@
     "html-webpack-plugin": "^3.2.0",
     "html-loader": "^0.5.5",
     "mini-css-extract-plugin": "^0.4.0",
+    "nodemon": "^1.17.5",
     "reset-css": "^3.0.0",
     "resolve-url-loader": "^2.3.0",
     "svg-url-loader": "^2.3.2",
@@ -28,7 +35,8 @@
     "dev": "webpack --mode development --display-error-details",
     "build": "webpack --mode production",
     "watch": "webpack --mode development --watch",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack-dev-server --mode development --open",
+    "server": "nodemon server.js"
   },
   "author": "wannaweed",
   "license": "ISC"

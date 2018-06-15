@@ -1,5 +1,5 @@
-import createBalloonLayout from './createBalloonLayout';
-import createBalloonContentLayout from './createBalloonContentLayout';
+import createBalloonLayout from './balloon/createBalloonLayout';
+import createBalloonContentLayout from './balloon/createBalloonContentLayout';
 
 const createPlacemark = (map, pointData) => {
 	let coords = pointData.coords ? pointData.coords : pointData.geometry.getCoordinates();

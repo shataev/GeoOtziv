@@ -1,4 +1,4 @@
-import balloon from '../../templates/balloon.hbs';
+import balloon from '../../../templates/balloon.hbs';
 
 let createBalloonContentLayout = (pointData) => {
     let baloonHTML = balloon(pointData);

@@ -1,4 +1,4 @@
-import createItemContentLayout from './../utils/createItemContentLayout';
+import createItemContentLayout from '../utils/balloon/createItemContentLayout';
 
 let makeClusterer = () => {
     let clusterer = new ymaps.Clusterer({

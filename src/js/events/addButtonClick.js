@@ -1,10 +1,11 @@
 import createPlacemark from './../utils/createPlacemark';
-import getReviewDataFromForm from './../utils/getReviewDataFromForm';
-import clearFormFields from './../utils/clearFormFields';
-import addReviewDataToLocalStorage from './../utils/storageReviewData';
-import updateReviewList from './../utils/updateReviewList';
-import validateForm from './../utils/validateForm';
-import showHideInvalidMessage from './../utils/showHideInvalidMessage';
+import getReviewDataFromForm from '../utils/reviews/getReviewDataFromForm';
+import clearFormFields from '../utils/form/clearFormFields';
+import addReviewDataToLocalStorage from '../utils/reviews/storageReviewData';
+import updateReviewList from '../utils/reviews/updateReviewList';
+import validateForm from '../utils/form/validateForm';
+import showHideInvalidMessage from '../utils/form/showHideInvalidMessage';
+import addReviewToDatabase from '../utils/reviews/addReviewToDatabase';
 
 const addButtonClickHandler = (map, clusterer) => {
     document.body.addEventListener('click', e => {
@@ -29,6 +30,7 @@ const addButtonClickHandler = (map, clusterer) => {
 				const placemark = createPlacemark(map, newPointData);
 
 				addReviewDataToLocalStorage(newPointData);
+                addReviewToDatabase(newPointData);
 
 				clusterer.add(placemark);
 

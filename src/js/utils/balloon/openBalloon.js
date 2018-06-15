@@ -1,5 +1,5 @@
-import createBalloonLayout from './../utils/createBalloonLayout';
-import createBalloonContentLayout from './../utils/createBalloonContentLayout';
+import createBalloonLayout from './createBalloonLayout';
+import createBalloonContentLayout from './createBalloonContentLayout';
 
 const openBalloon = (map, pointData) => {
     map.balloon.open(pointData.coords, pointData, {

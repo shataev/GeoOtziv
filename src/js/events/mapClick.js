@@ -1,5 +1,5 @@
 import getAddressFromCoords from './../utils/getAdressFromCoords';
-import openBalloon from './../utils/openBalloon';
+import openBalloon from '../utils/balloon/openBalloon';
 
 const addClickHandlerToMap = (map) => {
 	map.events.add('click', (e) => {

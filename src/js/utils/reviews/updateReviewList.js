@@ -1,4 +1,4 @@
-import reviewList from './../../templates/reviewList.hbs'
+import reviewList from '../../../templates/reviewList.hbs'
 
 const updateReviewList = (listContainer, adress) => {
 	const listData = {

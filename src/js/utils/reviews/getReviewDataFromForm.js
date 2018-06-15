@@ -1,4 +1,4 @@
-import formatDate from './../utils/formatDate';
+import formatDate from '../formatDate';
 
 const getReviewDataFromForm = (form) => {
 	const author = form['author'].value;

@@ -1,4 +1,4 @@
-import getInvalidFieldsName from './../utils/getInvalidFieldsName';
+import getInvalidFieldsName from './getInvalidFieldsName';
 
 const showHideInvalidMessage = (form, invalidFields) => {
 	if (invalidFields.length > 0) {
