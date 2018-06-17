@@ -1,5 +1,4 @@
 const addReviewToDatabase = (reviewData) => {
-    debugger;
     const request = new XMLHttpRequest();
     const requestBody = `coords=${encodeURIComponent(reviewData.coords)}&adress=${encodeURIComponent(reviewData.adress)}&review=${encodeURIComponent(JSON.stringify(reviewData.review))}`;
 

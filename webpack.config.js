@@ -5,6 +5,7 @@ let CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
 	entry: [
+		'babel-polyfill',
 		'./src/js/entry.js',
 		'./src/css/styles.css'
 	],

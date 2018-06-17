@@ -1,7 +1,7 @@
 import createBalloonLayout from './balloon/createBalloonLayout';
 import createBalloonContentLayout from './balloon/createBalloonContentLayout';
 
-const createPlacemark = (map, pointData) => {
+const createPlacemark = (pointData) => {
 	let coords = pointData.coords ? pointData.coords : pointData.geometry.getCoordinates();
 	let myPlacemark = new ymaps.Placemark(coords, {
 		pointData: pointData

@@ -27,7 +27,7 @@ const addButtonClickHandler = (map, clusterer) => {
 					adress: pointData.adress,
 					review: reviewData
 				};
-				const placemark = createPlacemark(map, newPointData);
+				const placemark = createPlacemark(newPointData);
 
 				addReviewDataToLocalStorage(newPointData);
                 addReviewToDatabase(newPointData);
